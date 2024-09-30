@@ -6,7 +6,7 @@ import net.mamoe.mirai.utils.info
 object Furrtism : KotlinPlugin(
     JvmPluginDescription(
         id = "io.random.furrtism",
-name = "Furrtism",
+        name = "Furrtism",
         version = "0.0.1",
     ) {
 
