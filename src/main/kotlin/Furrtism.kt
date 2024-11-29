@@ -1,5 +1,7 @@
 package io.random
 
+import io.random.command.*
+import net.mamoe.mirai.console.command.CommandManager.INSTANCE.register
 import net.mamoe.mirai.console.plugin.jvm.JvmPluginDescription
 import net.mamoe.mirai.console.plugin.jvm.KotlinPlugin
 import net.mamoe.mirai.utils.info
@@ -15,5 +17,8 @@ author("herry")
 ) {
     override fun onEnable() {
         logger.info { "Plugin loaded" }
+
+        Config.reload()
+        CountCommand.register()
     }
 }
